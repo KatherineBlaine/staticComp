@@ -1,0 +1,41 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* overflow: scroll; */
+}
+
+nav {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  border: 2px solid green;
+}
+
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+header {
+  display: flex;
+  border: 2px solid red;
+}
+
+.cards {
+  border: 2px solid black;
+  width: 20%;
+  height: 350px;
+  margin-top: 20px;
+}
