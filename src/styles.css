@@ -8,7 +8,8 @@ html, body {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  height: 100%;
   /* overflow: hidden; */
 }
 
@@ -21,10 +22,11 @@ html, body {
   overflow: scroll;
   z-index: -1;
   position: relative;
-  margin-top: 15px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 30px;
   /* background-color: #131B23; */
 }
 
@@ -240,7 +242,7 @@ li {
 h2 {
   z-index: -1;
   position: relative;
-  margin-top: 180px;
+  margin-top: 170px;
   font-size: 35px;
   display: flex;
   /* justify-content: center; */
