@@ -2,7 +2,26 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-main {
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 30px;
+  /* overflow: hidden; */
+}
+
+.main {
+  /* margin-top: 100px; */
+  display: inline-block;
+}
+
+.all-cards {
+  overflow: scroll;
+  z-index: -1;
+  position: relative;
+  margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -10,10 +29,10 @@ main {
 }
 
 .header-logo {
-  height: 120px;
-  width: 330px;
+  height: 75px;
+  width: 220px;
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .nav-logos {
@@ -36,7 +55,7 @@ nav {
   width: 100%;
   height: 200px;
   position: relative;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .text {
@@ -57,8 +76,8 @@ nav {
   margin-top: 25px;
   margin-right: 12px;
   font-size: 40px;
-  color: #DE6B48;
-  font-weight: bold;
+  color: #F95738;
+  font-weight: bolder;
 }
 
 .container {
@@ -72,6 +91,68 @@ nav {
   /* margin-top: 6px; */
   margin-right: 8px;
 }
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.location {
+  margin: 0;
+  color: #F95738;
+  font-style: italic;
+}
+
+.resort-name {
+  margin: 0;
+  font-size: 22px;
+}
+
+.elevation-info {
+  margin: 0;
+}
+
+.elevation-heading {
+  margin: 0;
+  font-size: 13px;
+}
+
+.elevation {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.rank-heading {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.rank {
+  margin: 0;
+  font-size: 45px;
+  color: #80a4ed;
+  font-weight: bold;
+}
+
+.site-link {
+  width: fit-content;
+  padding: 8px;
+  background-color: rgb(215, 215, 215);
+  /* font-style: italic; */
+  border-radius: 5px;
+}
+
+.card-heading {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+/* h3 {
+  font-size: ;
+} */
 
 .icon-overlay {
   height: 60px;
@@ -110,20 +191,30 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 500px;
+  margin-bottom: 0px;
 }
 
 header {
+  height: 150px;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
-  background-color: #EFE5DC;
   color: #131B23;
+  background-color: #EE964B;
+  /* opacity: .9; */
+  box-shadow: 0px 0px 2px 2px #ccc;
 }
 
+
 .cards {
-  border: 2px solid black;
-  background-color: #EFE5DC;
+  position: relative;
+  background-color: #f4efdea8;
   width: 22%;
   height: fit-content;
   margin-top: 20px;
+  box-shadow: 0px 0px 2px 2px #ccc;
+  overflow: auto;
 }
 
 li {
@@ -147,7 +238,12 @@ li {
 }
 
 h2 {
-  font-size: 30px;
+  z-index: -1;
+  position: relative;
+  margin-top: 180px;
+  font-size: 35px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  margin-bottom: 0;
+  margin-left: 20px;
 }
