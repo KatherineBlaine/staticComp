@@ -8,17 +8,21 @@ html, body {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  /* margin-bottom: 30px; */
+  background-color: #f7f5ed;
+  z-index: -1;
+  position: relative;
   height: 100%;
-  /* overflow: hidden; */
 }
 
 .main {
   /* margin-top: 100px; */
   display: inline-block;
+  background-color: #f7f5ed;
+
 }
 
 .all-cards {
+
   overflow: scroll;
   z-index: -1;
   position: relative;
@@ -27,20 +31,28 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 30px;
-  /* background-color: #131B23; */
+  background-color: #f7f5ed;
 }
 
 .header-logo {
   height: 75px;
   width: 220px;
   margin-bottom: 30px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .nav-logos {
   height: 20px;
   width: 20px;
+  filter: brightness(0);
+  /* background-color: white; */
 }
+
+.material-symbols-outlined {
+  color: #F4D35E;
+  font-size: 25px;
+}
+
 
 #dropdownLogo {
   margin-left: 10px;
@@ -51,6 +63,17 @@ nav {
   display: flex;
   align-items: flex-end;
   /* border: 2px solid green; */
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid #f7f5ed;
+  box-shadow: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  /* padding: 0; */
+  /* margin: 1px !important; */
 }
 
 .pics {
@@ -134,7 +157,7 @@ nav {
 .rank {
   margin: 0;
   font-size: 45px;
-  color: #80a4ed;
+  color: #0D3B66;
   font-weight: bold;
 }
 
@@ -202,8 +225,8 @@ header {
   top: 0;
   width: 100%;
   display: flex;
-  color: #131B23;
-  background-color: #EE964B;
+  color: #ffffff;
+  background-color: #0D3B66;
   /* opacity: .9; */
   box-shadow: 0px 0px 2px 2px #ccc;
 }
@@ -211,7 +234,7 @@ header {
 
 .cards {
   position: relative;
-  background-color: #f4efdea8;
+  background-color: #ffffff;
   width: 22%;
   height: fit-content;
   margin-top: 20px;
@@ -226,17 +249,36 @@ li {
 
 .nav-titles {
   margin-left: 10px;
+  color: #f7f5ed;
+}
+
+.admin {
+  font-size: 20px;
+  color: #f7f5ed;
+  margin-right: 3px;
 }
 
 .user-logo {
   height: 35px;
   width: 35px;
   margin-right: 5px;
+  background-color: white;
 }
 
 .user-profile {
+  padding: 2px;
+  /* margin-right: 5px; */
+  margin: 2px;
+  /* margin-top: 5px; */
+  font-size: 17px;
   display: flex;
   align-items: center;
+}
+
+#user1 {
+  margin-top: 5px;
+  font-size: 27px;
+  margin-right: 12px;
 }
 
 h2 {
