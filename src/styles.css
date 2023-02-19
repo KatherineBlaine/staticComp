@@ -4,13 +4,13 @@ html {
 
 html, body {
   position: relative;
-  z-index: -1;
-  max-width: 100%;
-  height: 100%;
   overflow-x: hidden;
+  z-index: -1;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
+  max-width: 100%;
+  height: 100%;
   background-color: #f7f5ed;
 }
 
@@ -20,71 +20,18 @@ header {
   display: flex;
   position: fixed;
   top: 0;
+  padding-bottom: 10px;
   height: 150px;
   width: 100%;
-  padding-bottom: 10px;
   box-shadow: 0px 0px 2px 2px #ccc;
   color: #ffffff;
   background-color: #0D3B66;
 }
 
-.admin {
-  font-size: 20px;
-  color: #f7f5ed;
-}
-
-.user-logo {
-  height: 35px;
-  width: 35px;
-  margin-right: 5px;
-  background-color: white;
-}
-
-.user-profile {
-  padding: 2px;
-  margin: 2px;
-  display: flex;
-  align-items: center;
-}
-
-#user1 {
-  margin-top: 5px;
-  font-size: 30px;
-  margin-right: 4px;
-}
-
-#dropdownLogo {
-  margin-left: 5px;
-}
-
-.account {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: none;
-  margin-top: 5px;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 50%;
-  margin-right: 20px;
-}
-
-.header-logo {
-  height: 90px;
-  width: 260px;
-  margin-bottom: 30px;
-  margin-top: 10px;
-  margin-right: 15px;
-}
-
 nav {
-  width: 50%;
   display: flex;
   align-items: flex-end;
+  width: 50%;
 }
 
 ul {
@@ -92,8 +39,8 @@ ul {
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
-  width: 500px;
   margin-bottom: 0px;
+  width: 500px;
 }
 
 li {
@@ -101,91 +48,118 @@ li {
   align-items: center;
 }
 
+.material-symbols-outlined {
+  font-size: 26px;
+  color: #F4D35E;
+}
+
 .nav-titles {
   margin-left: 6px;
   font-size: 17px;
-  font-family: 'Montserrat', sans-serif;
+  color: #f7f5ed;
+  font-weight: bolder;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 20px;
+  width: 50%;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin: 2px;
+  padding: 2px;
+}
+
+.admin-dropdown {
+  margin-top: 5px;
+  margin-right: 4px;
+  font-size: 28px !important;
   color: #f7f5ed;
 }
 
-.nav-logos {
-  height: 20px;
-  width: 20px;
-}
-
-.material-symbols-outlined {
-  color: #F4D35E;
-  font-size: 26px;
+.header-logo {
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  height: 90px;
+  width: 260px;
 }
 
 /* Main section Styling */
 
-.main {
-  background-color: #f7f5ed;
-}
-
-.all-cards {
+main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  z-index: -1;
   position: relative;
+  z-index: -1;
   margin-top: 180px;
   margin-bottom: 30px;
   background-color: #f7f5ed;
 }
 
-.cards {
-  background-color: #ffffff;
-  width: 340px;
+.card {
   margin-top: 20px;
+  width: 340px;
   box-shadow: 0px 0px 2px 2px #ccc;
-}
-
-.pics {
-  width: 100%;
-  height: 200px;
-  position: relative;
-  opacity: 0.7;
+  background-color: #ffffff;
 }
 
 .container {
   position: relative;
 }
 
+.img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  opacity: 0.7;
+}
+
 .icon-overlay {
-  height: 60px;
-  width: 60px;
+  display: flex;
+  justify-content: center;
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #ffffff;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
   margin-top: 8px;
   margin-left: 8px;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  background-color: #ffffff;
 }
 
 .arrow-icon {
+  position: absolute;
+  margin-top: 15px;
   height: 30px;
   width: 30px;
-  position: absolute;
-  border-radius: 10px;
-  margin-top: 15px;
 }
 
-.text {
+.text-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 8px;
+}
+
+.views-heading {
   position: absolute;
   top: 0;
   right: 0;
   margin-top: 8px;
   margin-right: 8px;
-  color: #131B23;
   font-size: 18px;
+  color: #131B23;
 }
 
-.numViews {
+.num-views {
   position: absolute;
   top: 0;
   right: 0;
@@ -194,13 +168,6 @@ li {
   font-size: 40px;
   font-weight: bolder;
   color: #F95738;
-}
-
-.text-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 8px;
 }
 
 .card-text {
@@ -221,15 +188,15 @@ li {
 
 .location {
   margin: 0;
-  color: #F95738;
   font-style: italic;
+  color: #F95738;
 }
 
 .site-link {
-  width: fit-content;
   padding: 8px;
-  background-color: rgb(215, 215, 215);
+  width: fit-content;
   border-radius: 5px;
+  background-color: rgb(215, 215, 215);
 }
 
 .elevation-heading {
@@ -244,30 +211,35 @@ li {
 }
 
 .rank-heading {
-  margin-bottom: 0;
   margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .rank {
   margin: 0;
   font-size: 45px;
-  color: #0D3B66;
   font-weight: bold;
+  color: #0D3B66;
 }
 
 /* Interactive Styling */
-
-.user-profile:hover {
-  cursor: pointer;
-  opacity: 70%;
-}
 
 li:hover {
   cursor: pointer;
   opacity: 70%;
 }
 
-.cards:hover {
+.user-profile:hover {
   cursor: pointer;
   opacity: 70%;
+}
+
+.card:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.site-link:hover {
+  color: #0000EE;
+  text-decoration: underline;
 }
