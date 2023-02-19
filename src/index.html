@@ -8,117 +8,252 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Ski CO</title>
 </head>
 <body>
   <header>
     <nav>
       <ul>
         <li>
-          <img src="../assets/share-icon.png" class="nav-logos">
+          <span class="material-symbols-outlined">share</span>
           <p class="nav-titles">SHARES</p>
         </li>
         <li>
-          <img src="../assets/list-icon.png" class="nav-logos">
+          <span class="material-symbols-outlined">list</span>
           <p class="nav-titles">PLAYLISTS</p>
         </li>
         <li>
-          <img src="../assets/personal-icon.png" class="nav-logos">
-          <p class="nav-titles">PERSONAL VIDEOS</p>
+          <span class="material-symbols-outlined">person</span>
+          <p class="nav-titles">MY RESORTS</p>
         </li>
       </ul>
     </nav>
-    <section class="logo">
+    <section class="logo-section">
       <div class="user-profile">
-        <img src="../assets/user-icon.png" class="user-logo">
-        <p>Admin Username</p>
-        <img src="../assets/dropdown-icon.png" class="nav-logos" id="dropdownLogo">
+        <span class="material-symbols-outlined admin-dropdown">account_circle</span>
+        <span class="material-symbols-outlined admin-dropdown">expand_more</span>
       </div>
-      <img src="../assets/logo.png" alt="logo" class="header-logo">
+      <img src="../assets/logo.png" alt="Ski Colorado Logo" class="header-logo">
     </section>
   </header>
-  <h2>Shares</h2>
   <main>
-    <article class="cards">
-      <img src="../assets/pic1.png" alt="pic1" class="pics">
-      <h3>Name</h3>
-      <p>Date</p>
-      <p>Link</p>
-      <h4>Playlist</h4>
-      <p>Name of Playlist</p>
-      <h5>Attachments</h5>
-      <p>04</p>
-    </article class="cards">
-    <article class="cards">
-      <img src="../assets/pic2.png" alt="pic2" class="pics">
-      <h3>Name</h3>
-      <p>Date</p>
-      <p>Link</p>
-      <h4>Playlist</h4>
-      <p>Name of Playlist</p>
-      <h5>Attachments</h5>
-      <p>04</p>
-    </article class="cards">
-    <article class="cards">
-      <img src="../assets/pic3.png" alt="pic3" class="pics">
-      <h3>Name</h3>
-      <p>Date</p>
-      <p>Link</p>
-      <h4>Playlist</h4>
-      <p>Name of Playlist</p>
-      <h5>Attachments</h5>
-      <p>04</p>
-    </article class="cards">
-    <article class="cards">
-      <img src="../assets/pic4.png" alt="pic4" class="pics">
-      <h3>Name</h3>
-      <p>Date</p>
-      <p>Link</p>
-      <h4>Playlist</h4>
-      <p>Name of Playlist</p>
-      <h5>Attachments</h5>
-      <p>04</p>
-    </article class="cards">
-    <article class="cards">
-      <img src="../assets/pic5.png" alt="pic5" class="pics">
-      <h3>Name</h3>
-      <p>Date</p>
-      <p>Link</p>
-      <h4>Playlist</h4>
-      <p>Name of Playlist</p>
-      <h5>Attachments</h5>
-      <p>04</p>
-    </article class="cards">
-    <article class="cards">
-      <img src="../assets/pic6.png" alt="pic6" class="pics">
-      <h3>Name</h3>
-      <p>Date</p>
-      <p>Link</p>
-      <h4>Playlist</h4>
-      <p>Name of Playlist</p>
-      <h5>Attachments</h5>
-      <p>04</p>
-    </article class="cards">
-    <article class="cards">
-      <img src="../assets/pic7.png" alt="pic7" class="pics">
-      <h3>Name</h3>
-      <p>Date</p>
-      <p>Link</p>
-      <h4>Playlist</h4>
-      <p>Name of Playlist</p>
-      <h5>Attachments</h5>
-      <p>04</p>
-    </article class="cards">
-    <article class="cards">
-    <img src="../assets/pic8.png" alt="pic8" class="pics">
-      <h3>Name</h3>
-      <p>Date</p>
-      <p>Link</p>
-      <h4>Playlist</h4>
-      <p>Name of Playlist</p>
-      <h5>Attachments</h5>
-      <p>04</p>
-    </article class="cards">
+    <article class="card">
+      <div class="container">
+        <img src="../assets/pic3.png" alt="Image of Breckenridge Resort" class="img">
+        <div class="icon-overlay">
+          <img src="../assets/arrow-icon.png" alt="arrow icon" class="arrow-icon">
+        </div>
+        <div class="text-overlay">
+            <p class="views-heading">VIEWS</p>
+            <p class="num-views">06</p>
+        </div>
+      </div>
+      <section class="card-text">
+        <div class="card-heading">
+          <h3 class="resort-name">Breckenridge</h3>
+          <p class="location">Breckenridge, CO.</p>
+        </div>
+        <p class="site-link">https://www.breckenridge.com/</p>
+        <div class="elevation-info">
+          <h4 class="elevation-heading">SUMMIT ELEVATION</h4>
+          <p class="elevation">12570 ft</p>
+        </div>
+        <div>
+          <h5 class="rank-heading">RESORT RANKING</h5>
+          <p class="rank">09</p>
+        </div>
+      </section>
+    </article>
+    <article class="card">
+      <div class="container">
+        <img src="../assets/pic5.png" alt="Image of Vail Resort" class="img">
+        <div class="icon-overlay">
+          <img src="../assets/arrow-icon.png" alt="arrow icon" class="arrow-icon">
+        </div>
+        <div class="text-overlay">
+          <p class="views-heading">VIEWS</p>
+          <p class="num-views">10</p>
+        </div>
+      </div>
+      <section class="card-text">
+        <div class="card-heading">
+          <h3 class="resort-name">Vail</h3>
+          <p class="location">Vail, CO.</p>
+        </div>
+        <p class="site-link">https://www.vail.com/</p>
+        <div class="elevation-info">
+          <h4 class="elevation-heading">SUMMIT ELEVATION</h4>
+          <p class="elevation">11570 ft</p>
+        </div>
+        <div>
+          <h5 class="rank-heading">RESORT RANKING</h5>
+          <p class="rank">02</p>
+        </div>
+      </section>
+    </article>
+    <article class="card">
+      <div class="container">
+        <img src="../assets/pic8.png" alt="Image of Snowmass Resort" class="img">
+        <div class="icon-overlay">
+          <img src="../assets/arrow-icon.png" alt="arrow icon" class="arrow-icon">
+        </div>
+        <div class="text-overlay">
+          <p class="views-heading">VIEWS</p>
+          <p class="num-views">02</p>
+        </div>
+      </div>
+      <section class="card-text">
+        <div class="card-heading">
+          <h3 class="resort-name">Snowmass</h3>
+          <p class="location">Snowmass Village, CO.</p>
+        </div>
+        <p class="site-link">https://www.aspensnowmass.com/</p>
+        <div class="elevation-info">
+          <h4 class="elevation-heading">SUMMIT ELEVATION</h4>
+          <p class="elevation">12510 ft</p>
+        </div>
+        <div>
+          <h5 class="rank-heading">RESORT RANKING</h5>
+          <p class="rank">03</p>
+        </div>
+      </section>
+    </article>
+    <article class="card">
+      <div class="container">
+        <img src="../assets/pic7.png" alt="Image of Winter Park Resort" class="img">
+        <div class="icon-overlay">
+          <img src="../assets/arrow-icon.png" alt="arrow icon" class="arrow-icon">
+        </div>
+        <div class="text-overlay">
+          <p class="views-heading">VIEWS</p>
+          <p class="num-views">15</p>
+        </div>
+      </div>
+      <section class="card-text">
+        <div class="card-heading">
+          <h3 class="resort-name">Winter Park</h3>
+          <p class="location">Winter Park, CO.</p>
+        </div>
+        <p class="site-link">https://www.winterparkresort.com/</p>
+        <div class="elevation-info">
+          <h4 class="elevation-heading">SUMMIT ELEVATION</h4>
+          <p class="elevation">12060 ft</p>
+        </div>
+        <div>
+          <h5 class="rank-heading">RESORT RANKING</h5>
+          <p class="rank">05</p>
+        </div>
+      </section>
+    </article>
+    <article class="card">
+      <div class="container">
+        <img src="../assets/pic1.png" alt="Image of Telluride Resort" class="img">
+        <div class="icon-overlay">
+          <img src="../assets/arrow-icon.png" alt="arrow icon" class="arrow-icon">
+        </div>
+        <div class="text-overlay">
+            <p class="views-heading">VIEWS</p>
+            <p class="num-views">08</p>
+        </div>
+      </div>
+      <section class="card-text">
+        <div class="card-heading">
+          <h3 class="resort-name">Telluride</h3>
+          <p class="location">Telluride, CO.</p>
+        </div>
+        <p class="site-link">https://www.telluride.com/</p>
+        <div class="elevation-info">
+          <h4 class="elevation-heading">SUMMIT ELEVATION</h4>
+          <p class="elevation">12570 ft</p>
+        </div>
+        <div>
+          <h5 class="rank-heading">RESORT RANKING</h5>
+          <p class="rank">01</p>
+        </div>
+      </section>
+    </article>
+    <article class="card">
+      <div class="container">
+        <img src="../assets/pic2.png" alt="Image of Steamboat Resort" class="img">
+        <div class="icon-overlay">
+          <img src="../assets/arrow-icon.png" alt="arrow icon" class="arrow-icon">
+        </div>
+        <div class="text-overlay">
+            <p class="views-heading">VIEWS</p>
+            <p class="num-views">25</p>
+        </div>
+      </div>
+      <section class="card-text">
+        <div class="card-heading">
+          <h3 class="resort-name">Seamboat</h3>
+          <p class="location">Steamboat Springs, CO.</p>
+        </div>
+        <p class="site-link">https://www.steamboat.com/</p>
+        <div class="elevation-info">
+          <h4 class="elevation-heading">SUMMIT ELEVATION</h4>
+          <p class="elevation">10568 ft</p>
+        </div>
+        <div>
+          <h5 class="rank-heading">RESORT RANKING</h5>
+          <p class="rank">04</p>
+        </div>
+      </section>
+    </article>
+    <article class="card">
+      <div class="container">
+        <img src="../assets/pic6.png" alt="Image of Keystone Resort" class="img">
+        <div class="icon-overlay">
+          <img src="../assets/arrow-icon.png" alt="arrow icon" class="arrow-icon">
+        </div>
+        <div class="text-overlay">
+          <p class="views-heading">VIEWS</p>
+          <p class="num-views">05</p>
+        </div>
+      </div>
+      <section class="card-text">
+        <div class="card-heading">
+          <h3 class="resort-name">Keystone</h3>
+          <p class="location">Keystone, CO.</p>
+        </div>
+        <p class="site-link">https://www.keystoneresort.com/</p>
+        <div class="elevation-info">
+          <h4 class="elevation-heading">SUMMIT ELEVATION</h4>
+          <p class="elevation">11998 ft</p>
+        </div>
+        <div>
+          <h5 class="rank-heading">RESORT RANKING</h5>
+          <p class="rank">14</p>
+        </div>
+      </section>
+    </article>
+    <article class="card">
+      <div class="container">
+        <img src="../assets/pic4.png" alt="Image of Beaver Creek Resort" class="img">
+        <div class="icon-overlay">
+          <img src="../assets/arrow-icon.png" alt="arrow icon" class="arrow-icon">
+        </div>
+        <div class="text-overlay">
+            <p class="views-heading">VIEWS</p>
+            <p class="num-views">04</p>
+        </div>
+      </div>
+      <section class="card-text">
+        <div class="card-heading">
+          <h3 class="resort-name">Beaver Creek</h3>
+          <p class="location">Beaver Creek, CO.</p>
+        </div>
+        <p class="site-link">https://www.beavercreek.com/</p>
+        <div class="elevation-info">
+          <h4 class="elevation-heading">SUMMIT ELEVATION</h4>
+          <p class="elevation">11440 ft</p>
+        </div>
+        <div>
+          <h5 class="rank-heading">RESORT RANKING</h5>
+          <p class="rank">06</p>
+        </div>
+      </section>
+    </article>
   </main>
 </body>
 </html>
